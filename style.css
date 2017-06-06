@@ -1,0 +1,149 @@
+/*** COLORS ***/
+
+@bg-color: #000;
+@txt-color: #FFFFFF;
+@icn-color: #FFFFFF;
+
+/*** DEMO ***/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  min-height:100%;
+  position: relative;
+}
+
+body {
+  background: #000;
+  font: 13px monospace;
+  color: #FFFFFF;
+}
+
+#enter {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color:#000;
+  background-color:#fff;
+}
+
+.cntr {
+  display: table;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cntr-innr {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+/*** STYLES ***/
+
+.search {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  margin: 0px 8px 7px 0px;
+  padding: 7px 9px 0px 9px;
+  border: 3px solid #FFFFFF;
+  border-radius: 25px;
+  transition: all 200ms ease;
+  cursor: text;  
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  font-size: 15px;
+  color: inherit;
+  background: transparent;
+  outline-width: 0px;
+}
+
+.search:after{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  right: -5px;
+  top: 21px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  transition: all 200ms ease;
+}
+
+.search:active,
+.search:hover {
+  width: 200px;
+  margin-right: 0px;
+  &:after {
+    height: 0px;
+  }
+}
+
+button a {
+  color: #fff;
+}
+
+button {
+  margin-top: 2em;
+}
+
+section {
+  text-align: center;
+}
+
+.content {
+  background-color: #fff;
+  color: #000;
+  margin: 3em;
+  padding: 1em;
+  border-radius: 4em;
+}
+
+a p {
+  font-size: 2em;
+  color: #000;
+}
+
+h1{
+  font-size: 6em;
+}
+
+a h2 {
+  color: #000;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+#vermelho {
+  background-color: #ff0600;
+}
+
+button a:focus,
+button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer{
+  background-color: #fff;
+  padding: 2em;
+  font-size: 1.2em;
+  margin-top: 2em;  
+}
+
+footer a{
+  color:#000;
+}
