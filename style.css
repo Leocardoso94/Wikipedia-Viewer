@@ -48,19 +48,14 @@ body {
 .search {
   display: inline-block;
   position: relative;
-  height: 35px;
-  width: 35px;
-  box-sizing: border-box;
   margin: 0px 8px 7px 0px;
   padding: 7px 9px 0px 9px;
   border: 3px solid #FFFFFF;
-  border-radius: 25px;
-  transition: all 200ms ease;
+  border-radius: 10px;
   cursor: text;  
 }
 
 .search input {
-  width: 100%;
   border: none;
   box-sizing: border-box;
   font-family: Helvetica;
@@ -68,28 +63,9 @@ body {
   color: inherit;
   background: transparent;
   outline-width: 0px;
-}
-
-.search:after{
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 20px;
-  right: -5px;
-  top: 21px;
-  background: #FFFFFF;
-  border-radius: 3px;
-  transform: rotate(-45deg);
-  transition: all 200ms ease;
-}
-
-.search:active,
-.search:hover {
   width: 200px;
   margin-right: 0px;
-  &:after {
-    height: 0px;
-  }
+  height: 30px;
 }
 
 button a {

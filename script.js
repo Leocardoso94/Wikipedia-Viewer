@@ -1,16 +1,6 @@
 $(document).ready(function() {
   
-  $("#inpt_search, #enter").on('focus', function() {
-    $(this).parent('label').addClass('active');
-    $("#enter").text("Enter to search");
-  });
-
-  $("#inpt_search").on('blur', function() {
-    if ($(this).val().length == 0)
-      $(this).parent('label').removeClass('active');
-
-    $("#enter").text("Hover to search");
-  });
+ 
 
   $("#inpt_search").keypress(function(e) {
     if (e.which == 13) {
